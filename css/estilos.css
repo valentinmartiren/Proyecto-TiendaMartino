@@ -66,6 +66,22 @@ header{
 }
 
 /************ MAIN *******************/
+/*
+.btnCarrito{
+    position: sticky;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    top: 5rem;
+    left: 90vw;
+    z-index: 100;
+    overflow: hidden;
+}*/
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 
 .titulo__p{
     font-size: 2rem;
@@ -74,6 +90,10 @@ header{
 .infoAdicionalIndex{
     background-color: #AED9E0;
     height: 20vh;
+}
+
+.infoAdicionalItems{
+    font-size: 1.2rem;
 }
 
 .iconos_categorias{
@@ -89,6 +109,39 @@ header{
     border-color: #AED9E0;
     transition: 1s;
     transform: translateY(-.50rem);
+}
+
+.productoCard{
+    height: 57vh;
+}
+
+.productoCardIndumentaria{
+    height: 67vh;
+}
+
+.productosContainer{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prodDescripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botonAgregar{
+    width: 100%;
+    background-color:#AED9E0;
+    border: .1rem solid #5E6472;
+}
+
+.botonAgregar:hover{
+    background-color: #FAF3DD;
+    border: .1rem solid #5E6472;
+    transition: .45s;
 }
 
 footer{
@@ -114,13 +167,19 @@ footer{
 }
 
 @media screen and (max-width: 768px){
-    .infoAdicionalItems{
+    .infoAdicionalItemsNone{
         display: none;
     }
     .productosContainer{
         flex-direction: column;
         padding-left: 3rem;
         margin-bottom: 1rem;
+    }
+    .productoCard{
+        height: 66vh;
+    }
+    .productoCardIndumentaria{
+        height: 75vh;
     }
     .footer__p{
         font-size: 1rem;

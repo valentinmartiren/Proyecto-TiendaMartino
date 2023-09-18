@@ -43,9 +43,10 @@
                 </div>
             </div>
         </nav>
-        <form class="d-flex w-100 justify-content-center pb-3">
-            <input class="form-control me-2 w-75" type="search" placeholder="¿Que está buscando?" aria-label="Search" onclick="buscar()">
-            <button class="botonBuscar px-3" type="submit">Buscar</button>
+        <form class="d-flex w-100 justify-content-center align-items-center pb-3">
+            <input class="form-control me-2 w-75 h-50" type="search" placeholder="¿Que estás buscando?" aria-label="Search" onclick="buscar()">
+            <button class="botonBuscar px-3 h-50" type="submit" onclick="buscar()"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 256 256"><g id="galaSearch0" fill="none" stroke="#5e6472" stroke-dasharray="none" stroke-miterlimit="4" stroke-width="16"><path id="galaSearch1" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1" d="m 89.074145,145.23139 -68.17345,68.17344"/><path id="galaSearch2" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="1" d="M 111.27275,167.42999 43.099304,235.60344"/><path id="galaSearch3" stroke-linecap="round" stroke-linejoin="round" d="m 43.099305,235.60344 a 15.696788,15.696788 0 0 1 -22.19861,0"/><path id="galaSearch4" stroke-linecap="round" stroke-linejoin="round" d="m 20.900695,213.40483 a 15.696788,15.696788 0 0 0 0,22.19861"/><path id="galaSearch5" stroke-linecap="round" stroke-linejoin="round" d="M 240.65575,86.483932 A 70.635544,70.635544 0 0 1 170.0202,157.11948 70.635544,70.635544 0 0 1 99.384659,86.483932 70.635544,70.635544 0 0 1 170.0202,15.848389 70.635544,70.635544 0 0 1 240.65575,86.483932 Z"/><path id="galaSearch6" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1" d="m 89.074145,145.23139 22.198605,22.1986"/><path id="galaSearch7" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1" d="m 100.17344,156.33068 19.89988,-19.89987"/><path id="galaSearch8" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="1" d="m 70.126446,164.17908 22.198606,22.1986"/><path id="galaSearch9" stroke-linecap="round" stroke-linejoin="round" d="M 209.26216,86.483936 A 39.241967,39.241967 0 0 1 170.0202,125.7259"/></g></svg></button>
+            <div class=""><button class="btn btnCarrito" onclick="listaCarrito()"><img src="assets/Carrito/carrito.png" alt="Carrito"></button></div>
         </form>
     </header>
     <main>
@@ -79,7 +80,7 @@
                 <div class="row">
                     <div class="col-12 d-flex flex-column align-items-center">
                         <h1>Tienda Online Martino</h1>
-                        <p class="titulo__p">Productos de librería de altísima calidad</p>
+                        <p class="titulo__p">Productos de librería de calidad</p>
                     </div>
                 </div>
             </div>
@@ -88,44 +89,45 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center px-5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24"><g fill="none" stroke="#faf3dd" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11 9h11M2 11l2.807-3.157A4 4 0 0 1 7.797 6.5H8m-6 13h5.5l4-3s.81-.547 2-1.5c2.5-2 0-5.166-2.5-3.5C8.964 12.857 7 14 7 14"/><path d="M8 13.5V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-6.5"/></g></svg>
-                    <b class="ms-3">3 y 6 cuotas sin interés.</b>
+                    <b class="ms-3 infoAdicionalItems">3 y 6 cuotas sin interés.</b>
                 </div>
                 <div class="col-md-3 col-sm-6 d-flex justify-content-center align-items-center px-5 infoAdicionalItems">
                     <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 24 24"><g fill="none" stroke="#faf3dd" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m16 12.5l-5-3l5-3l5 3V15l-5 3z"/><path d="M11 9.5V15l5 3m0-5.455l5-3.03M7 9H2m5 3H4m3 3H6"/></g></svg>
-                    <b class="ms-3">Envío a todo el PAÍS.</b>
+                    <b class="ms-3 infoAdicionalItems">Envío a todo el PAÍS.</b>
                 </div>
                 <div class="col-md-3 d-flex justify-content-center align-items-center px-5">
-                    <svg class="infoAdicionalItems" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 14 14"><g fill="none" stroke="#faf3dd" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.44" cy="11.33" r="2.17"/><path d="m8 9.8l3.86-3.86a.36.36 0 0 1 .51 0l1.13 1.15m-3.05.28l1.02 1.02M2 12.5h-.5a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1V4m-13-.5h13"/></g></svg>
-                    <b class="ms-3 infoAdicionalItems">Nuestro Sitio es seguro</b>
+                    <svg class="infoAdicionalItemsNone" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 14 14"><g fill="none" stroke="#faf3dd" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.44" cy="11.33" r="2.17"/><path d="m8 9.8l3.86-3.86a.36.36 0 0 1 .51 0l1.13 1.15m-3.05.28l1.02 1.02M2 12.5h-.5a1 1 0 0 1-1-1v-10a1 1 0 0 1 1-1h11a1 1 0 0 1 1 1V4m-13-.5h13"/></g></svg>
+                    <b class="ms-3 infoAdicionalItems infoAdicionalItemsNone">Nuestro Sitio es seguro</b>
                 </div>
                 <div class="col-md-3 d-flex justify-content-center align-items-center px-5">
-                    <svg class="infoAdicionalItems" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="#faf3dd" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214l-3.741.982l.998-3.648l-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
-                    <b class="ms-3 infoAdicionalItems">Comunicate con nosotros</b>
+                    <svg class="infoAdicionalItemsNone" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill="#faf3dd" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967c-.273-.099-.471-.148-.67.15c-.197.297-.767.966-.94 1.164c-.173.199-.347.223-.644.075c-.297-.15-1.255-.463-2.39-1.475c-.883-.788-1.48-1.761-1.653-2.059c-.173-.297-.018-.458.13-.606c.134-.133.298-.347.446-.52c.149-.174.198-.298.298-.497c.099-.198.05-.371-.025-.52c-.075-.149-.669-1.612-.916-2.207c-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372c-.272.297-1.04 1.016-1.04 2.479c0 1.462 1.065 2.875 1.213 3.074c.149.198 2.096 3.2 5.077 4.487c.709.306 1.262.489 1.694.625c.712.227 1.36.195 1.871.118c.571-.085 1.758-.719 2.006-1.413c.248-.694.248-1.289.173-1.413c-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214l-3.741.982l.998-3.648l-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884c2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                    <b class="ms-3 infoAdicionalItems infoAdicionalItemsNone">Comunicate con nosotros</b>
                 </div>
             </div>
         </div>
+
         <div class="container py-5">
             <h2>Categorías destacadas</h2>  
         </div>
         <div class="container-fluid d-flex justify-content-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2 col-sm-4 d-flex justify-content-evenly">
+                    <div class="col-md-2 d-flex justify-content-evenly">
                         <a href="" class="iconos_categorias"><img src="assets/iconosIndex/lapizIco.png" alt="iconoLapiz"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 d-flex justify-content-evenly">
+                    <div class="col-md-2 d-flex justify-content-evenly">
                         <a href="" class="iconos_categorias"><img src="assets/iconosIndex/carpetaIco.png" alt="iconoCarpeta"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 d-flex justify-content-evenly">
+                    <div class="col-md-2 d-flex justify-content-evenly">
                         <a href="" class="iconos_categorias"><img src="assets/iconosIndex/reglasIco.png" alt="iconoreglas"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 d-flex justify-content-evenly">
+                    <div class="col-md-2 d-flex justify-content-evenly">
                         <a href="" class="iconos_categorias"><img src="assets/iconosIndex/niniosIco.png" alt="icononiños"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 d-flex justify-content-evenly">
+                    <div class="col-md-2 d-flex justify-content-evenly">
                         <a href="" class="iconos_categorias"><img src="assets/iconosIndex/elTecnologia.png" alt="iconocalculadoras"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 d-flex justify-content-evenly">
+                    <div class="col-md-2 d-flex justify-content-evenly">
                         <a href="" class="iconos_categorias"><img src="assets/iconosIndex/indumentaria.png" alt="iconoindumentaria"></a>
                     </div>
                 </div>
@@ -147,68 +149,74 @@
             <div class="container productos d-flex justify-content-center">
                 <div class="row">
                     <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/packLapicerasBicAzules.png" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
                                 <p>Antes <del>$540</del> | Ahora $450</p>
                                 <h5 class="card-title">Lapiceras BIC</h5>
                                 <p class="card-text">Pack x unidades de lapiceras bic de color <span style="color: blue;">azul.</span></p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-4 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/packLapicerasBic.png" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
+                            <div class="card-body prodDescripcion">
                                 <p>$500</p>
                                 <h5 class="card-title">Lapiceras BIC</h5>
                                 <p class="card-text">Pack x3 unidades de lapiceras bic de colores.</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/packLapicesNegros.jpg" class="card-img-top img-fluid" alt="...">
                             <div class="card-body">
                                 <p>Antes <del>$540</del> | Ahora $450</p>
                                 <h5 class="card-title">Lapices negros BIC</h5>
                                 <p class="card-text">Pack de X3 unidades de lapices negros BIC</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-4 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/packLapicesColores.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p>$4500</p>
                                 <h5 class="card-title">Lapices de colores</h5>
                                 <p class="card-text">Pack de Lapices de colores Faber Castell</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-4 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/gomaBorrar.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p>$250</p>
                                 <h5 class="card-title">Goma de borrar</h5>
                                 <p class="card-text">Goma de borrar Maped</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-4 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/pluma.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p>Antes <del>$1920</del> | Ahora $1600</p>
                                 <h5 class="card-title">Pluma de escribir</h5>
                                 <p class="card-text">Pluma de escribir - Incluye repuesto de cartuchos.</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
@@ -224,36 +232,39 @@
         <div class="container-fluid">
             <div class="container productos">
                 <div class="row">
-                    <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-4 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/carpetas.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p>Antes <del>$720</del> | Ahora $600</p>
                                 <h5 class="card-title">Carpetas A4</h5>
                                 <p class="card-text">Carpetas A4 de colores pastel.</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-4 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/cuadernosOficio.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p>$750</p>
                                 <h5 class="card-title">Cuadernos rayados o cuadriculados Oficio</h5>
                                 <p class="card-text">Pack x3 unidades de lapiceras bic de colores.</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-4 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/Repuesto_Exito.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p>Antes <del>$5400</del> | Ahora $4500</p>
                                 <h5 class="card-title">Repuesto de ojas A4</h5>
                                 <p class="card-text">Respuesto de 480hojas A4 cuadriculadas o rayadas</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
@@ -268,27 +279,29 @@
             <h3>Reglas y medición</h3>
         </div>
         <div class="container-fluid">
-            <div class="container productos d-flex">
+            <div class="container productos d-flex justify-content-center">
                 <div class="row">
-                    <div class="col-md-6 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-6 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/kitreglas.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p>$1000</p>
                                 <h5 class="card-title">Kit reglas</h5>
                                 <p class="card-text">Kit de reglas Maped compuesto de regla 30cm, transportador y escuadra.</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-6 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/compasMaped.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p>Antes <del>$1200</del> | Ahora $1200</p>
                                 <h5 class="card-title">Compás</h5>
                                 <p class="card-text">Compás de plástico Maped - Incluye minas de repuesto</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
@@ -304,36 +317,39 @@
         <div class="container-fluid">
             <div class="container productos">
                 <div class="row">
-                    <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-4 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/cayonesFilgo.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p>$600</p>
                                 <h5 class="card-title">Crayones de colores</h5>
                                 <p class="card-text">Crayones Filgo colores x12 unidades.</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-4 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/Plastilina.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p>$750</p>
                                 <h5 class="card-title">Plastilina</h5>
                                 <p class="card-text">Plastilina de colores x6 unidades.</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 productosContainer">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-md-4 col-sm-1 productosContainer">
+                        <div class="card productoCard" style="width: 18rem;">
                             <img src="assets/productos/PackPapelGlace.png" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <p>$750</p>
                                 <h5 class="card-title">Pack papel glacé</h5>
                                 <p class="card-text">Pack papel glacé de colores x16 unidades .</p>
-                                <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                                <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                                <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                             </div>
                         </div>
                     </div>
@@ -349,36 +365,39 @@
     <div class="container-fluid">
         <div class="container productos">
             <div class="row">
-                <div class="col-md-4 col-sm-12 productosContainer">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-md-4 col-sm-1 productosContainer">
+                    <div class="card productoCard" style="width: 18rem;">
                         <img src="assets/productos/calculadoraPrintaform.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p>$2500</p>
                             <h5 class="card-title">Calculadora básica</h5>
                             <p class="card-text">Calculadora Printaform ideal para primaria y operaciones simples.</p>
-                            <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                            <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                            <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 productosContainer">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-md-4 col-sm-1 productosContainer">
+                    <div class="card productoCard" style="width: 18rem;">
                         <img src="assets/productos/CalculadoraCasio.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p>Antes <del>$60000</del> | Ahora $52000</p>
                             <h5 class="card-title">Calculadora científica</h5>
                             <p class="card-text">Calculadora Casio científica.</p>
-                            <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                            <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                            <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 productosContainer">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-md-4 col-sm-1 productosContainer">
+                    <div class="card productoCard" style="width: 18rem;">
                         <img src="assets/productos/USBKinngstone.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p>$750</p>
                             <h5 class="card-title">USB Kingston</h5>
                             <p class="card-text">USB kingston de 64GB.</p>
-                            <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                            <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                            <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                         </div>
                     </div>
                 </div>
@@ -394,36 +413,39 @@
     <div class="container-fluid">
         <div class="container productos">
             <div class="row">
-                <div class="col-md-4 col-sm-12 productosContainer">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-md-4 col-sm-1 productosContainer">
+                    <div class="card productoCardIndumentaria" style="width: 18rem;">
                         <img src="assets/productos/guardapolvoMujer.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p>$2500</p>
                             <h5 class="card-title">Guardapolvo mujer</h5>
                             <p class="card-text">Guardapolvo de mujer talle niño.</p>
-                            <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                            <a href="#" class="btn botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                            <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 productosContainer">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-md-4 col-sm-1 productosContainer">
+                    <div class="card productoCardIndumentaria" style="width: 18rem;">
                         <img src="assets/productos/guardapolvoHombre.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p>$2500</p>
                             <h5 class="card-title">Guardapolvo hombre</h5>
                             <p class="card-text">Guardapolvo de hombre talle niño.</p>
-                            <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                            <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                            <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 productosContainer">
-                    <div class="card" style="width: 18rem;">
+                <div class="col-md-4 col-sm-1 productosContainer">
+                    <div class="card productoCardIndumentaria" style="width: 18rem;">
                         <img src="assets/productos/jogginNinio.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p>$1500</p>
                             <h5 class="card-title">Jogging azúl</h5>
                             <p class="card-text">Jogging azul oscuro unisex yipo uniforme escolar talle niño.</p>
-                            <a href="#" class="btn btn-primary" onclick="agregarCarrito()">Agregar</a>
+                            <a href="#" class="btn  botonAgregar" onclick="agregarCarrito()">Agregar</a>
+                            <button class="btn botonAgregar mt-2" onclick="quitarCarrito()">Eliminar</button>
                         </div>
                     </div>
                 </div>

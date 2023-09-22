@@ -145,6 +145,31 @@ header{
     transition: .45s;
 }
 
+.buscador ul{
+    text-decoration: none;
+    list-style: none;
+    width: 50vw;
+    margin: .20rem;
+    margin-top: 1rem;
+}
+
+.buscador ul li{
+    border-radius: .1rem;
+    padding: .2rem;
+    background-color: #5E6472;
+}
+
+.buscador p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.resultados{
+    padding-top: 1rem;
+}
+
 footer{
     height: 15vh;
     font-size: 1.3rem;
